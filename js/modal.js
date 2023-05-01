@@ -291,15 +291,14 @@ standardButton2.addEventListener("click", () => {
 });
 premiumButton.addEventListener("click", () => {
   IsPremium = true;
-  if (medium == true) {
-    priceTag.textContent = `6500€`;
-  } else if (small == true) {
+  if (small == true) {
     priceTag.textContent = `${priceSmall + 400}€`;
   } else if (large == true) {
     priceTag.textContent = `${priceLarge + 400}€`;
-  } else if (zen == true) {
-    priceTag.textContent = `${priceZen + 400}€`;
   }
+  // else if (zen == true) {
+  //   priceTag.textContent = `${priceZen + 400}€`;
+  // }
   let testText = `
   ⁃ Korporacyjny design z indywidualnym podświetleniem LED 
   ⁃ Dostęp do bazy wiedzy
@@ -337,7 +336,7 @@ premiumButton2.addEventListener("click", () => {
   IsPremium2 = true;
   // info2.innerHTML = largeInfo.replace(/\n/g, "<br>");
   // console.log("medium2", medium2);
-  // console.log("s", small2);
+  console.log("s", small2);
   // console.log("l", large2);
   console.log(zen2);
   if (medium2 == true) {
@@ -415,15 +414,15 @@ smallButton.addEventListener("click", () => {
 //   largeButton.style.background = "";
 //   smallButton.style.background = "";
 //   zenButton.style.background = "";
-//   if (IsPremium) {
-//     priceTag.textContent = `${priceMedium + 500}$`;
-//     info.innerHTML =
-//       mediumInfo.replace(/\n/g, "<br>") + PremiumInfo.replace(/\n/g, "<br>");
-//   } else {
-//     priceTag.textContent = `${priceMedium}$`;
+// if (IsPremium) {
+//   priceTag.textContent = `${priceMedium + 500}$`;
+//   info.innerHTML =
+//     mediumInfo.replace(/\n/g, "<br>") + PremiumInfo.replace(/\n/g, "<br>");
+// } else {
+//   priceTag.textContent = `${priceMedium}$`;
 
-//     info.innerHTML = mediumInfo.replace(/\n/g, "<br>");
-//   }
+//   info.innerHTML = mediumInfo.replace(/\n/g, "<br>");
+// }
 // });
 largeButton.addEventListener("click", () => {
   image.src = "img/s5-pl.png";
